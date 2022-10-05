@@ -2,6 +2,10 @@
 
 export default function Home(){
     return (
-        <><div>Hola , este es el Home!!</div></>
+        <>
+        <h1>Home</h1>
+        <span>Tira error!</span>
+        <div>Hola , este es el Home!!</div>
+        </>
     )
 }
