@@ -1,10 +1,9 @@
-export default function Home() {
-  return (
-    <>
-        <img src="" alt="Imagen" />
-      <div>Hola , este es el Home!!</div>
-      <h2>Prueba de gabi</h2>
-      <p>Esperemos q tire error</p>
-    </>
-  );
+export default function Home(){
+    return (
+        <>
+        <h1>Home</h1>
+        <span>Tira error!</span>
+        <div>Hola , este es el Home!!</div>
+        </>
+    )
 }
