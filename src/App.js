@@ -12,6 +12,7 @@ import AddBook from './components/AddBook';
 
 
 import "./App.css";
+import BooksList from './components/BooksList';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path='/' element={<Home/>}/>  
           <Route exact path='/login' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
+          <Route exact path='/books' element={<BooksList />}/>  
           <Route exact path='/contact' element={<Contact/>}/>
           <Route exact path='/user' element={<User/>}/>
           <Route exact path='/addbook' element={<AddBook/>}/>
