@@ -5,10 +5,10 @@ export default function Navbar(){
         <div className={styles[`nav-bar`]}>
             
             <div className={styles[`nav-links`]}>
-            <span>Insertar imagen</span>
-            <li>Home</li>
-            <li>Contact</li>
-           
+            
+                <li><a href="/">Home</a></li>
+                <li><a href="/Contact">Contact</a></li>
+                <li><a href="/User">User</a></li>
             </div>    
         </div>
        

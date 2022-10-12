@@ -1,11 +1,17 @@
 .nav-bar {
     background-color: aquamarine;
+    padding: 20px;
+}
+ 
+.nav-links {
+    display: flex;
     justify-content: space-between;
-   
-
 }
 
+.nav-links li{
+    text-decoration: none;
+}
 
-.nav-links {
-    justify-content: flex-end;
+.nav-links a{
+    text-decoration: none;
 }
