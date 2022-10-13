@@ -2,16 +2,14 @@
     background-color: aquamarine;
     padding: 20px;
 }
- 
-.nav-links {
+
+.nav-links{
     display: flex;
     justify-content: space-between;
 }
 
-.nav-links li{
-    text-decoration: none;
+.nav-links img{
+    width: 5vw;
 }
 
-.nav-links a{
-    text-decoration: none;
-}
+
