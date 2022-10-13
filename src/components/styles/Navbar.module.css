@@ -1,0 +1,11 @@
+.nav-bar {
+    background-color: aquamarine;
+    justify-content: space-between;
+   
+
+}
+
+
+.nav-links {
+    justify-content: flex-end;
+}

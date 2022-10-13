@@ -1,0 +1,14 @@
+.form-register {
+    width: 320px;
+    background-color: thistle;
+    margin-left: 45%;
+    margin-top: 20%;
+ 
+ }
+ 
+ input {
+     width: 99%;
+     padding: 6px 20px;
+     box-sizing: border-box;
+ }
+ 

@@ -1,0 +1,19 @@
+.home {
+  width: 420px;
+  height: 80px;
+  background-color: tomato;
+  margin-left: 45%;
+  margin-top: 10%;
+
+}
+
+input {
+   width: 99%;
+   padding: 6px 20px;
+   box-sizing: border-box;
+}
+
+label {
+
+}
+
