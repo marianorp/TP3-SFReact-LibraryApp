@@ -9,8 +9,7 @@ import Navbar from './components/Navbar';
 import Register from './components/Register';
 import User from './components/User';
 import AddBook from './components/AddBook';
-
-
+import Detaill from './components/Detaill';
 import "./App.css";
 import BooksList from './components/BooksList';
 
@@ -19,10 +18,10 @@ function App() {
    <>
    <div className="App">
       <BrowserRouter> 
-        <Navbar/>
+        {/* <Navbar/> */}
         <Routes>
 
-          <Route exact path='/' element={<Home/>}/>  
+          <Route exact path='/' element={<Detaill/>}/>  
           <Route exact path='/login' element={<Login/>}/>
           <Route exact path='/register' element={<Register/>}/>
           <Route exact path='/books' element={<BooksList />}/>  
@@ -34,7 +33,7 @@ function App() {
       </BrowserRouter> 
     </div>
     </>
-  );
+  )
 }
 
 export default App;
