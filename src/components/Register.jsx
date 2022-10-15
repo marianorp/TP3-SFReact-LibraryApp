@@ -5,27 +5,15 @@ export default function Register(){
     const navigate = useNavigate();
 
     return (
-        <div className={styles[`form-register`]}>
-            
-            <h1>Register your Account</h1>
-
-            <label> Account :</label>
-            <input type="name"  id="account"/>
-           
-
-            <label> Name :</label>
-            <input type="name"  id="name"/>
-           
-
-            <label> Last Name :</label>
-            <input type="name"  id="lastname"/>
-          
-
-            <label>Password :</label>
-            <input type="password" id="password"/>
-            
-
-            <button className="form-button-2" onClick={() => navigate('/user')}>Sign up </button>
-       </div>
+        <div className={styles.page}> 
+        <div className={styles.cover}>
+            <div className={styles.title}><h1>Register your Account</h1></div>
+            <input type="text" placeholder="ACCOUNT" />
+            <input type="text" placeholder="NAME" />
+            <input type="text" placeholder="EMAIL" />
+            <input type="password" placeholder="PASSWORD" />
+            <div className={styles[`signup-btn`]} onClick={() => navigate('/user')}>Sign up</div>
+        </div>
+    </div>
     )
 }
