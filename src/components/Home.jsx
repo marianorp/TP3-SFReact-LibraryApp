@@ -1,19 +1,26 @@
-import { useNavigate } from "react-router-dom";
-import styles from "./styles/Home.module.css"
+import { Link } from "react-router-dom";
+import styles from "./styles/Home.module.css";
 
+const Home = () => {
+  return (
+    <div className={styles.container_home}>
+      <h1>Library App</h1>
+      <p className={styles.text_home}>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam omnis
+        eos qui maiores architecto tempora veritatis sed ipsa veniam, provident
+        mollitia nisi amet, excepturi quo atque quia error consequatur culpa
+      </p>
+      <Link className={styles.buttons} to="books">
+        See library
+      </Link>
+      <Link className={styles.buttons} to="login">
+        Login
+      </Link>
+      <Link className={styles.buttons} to="register">
+        Register
+      </Link>
+    </div>
+  );
+};
 
-
-export default function Home(){
-    const navigate = useNavigate();
-         
-    return (
-        <div className={styles.home}>
-            <h1>Library App</h1>
-            
-           
-                <button onClick={() => navigate('/login')}>Login</button>
-                <button onClick={() => navigate('/register')}>Register</button>
-     
-        </div> 
-    )
-}
+export default Home;
