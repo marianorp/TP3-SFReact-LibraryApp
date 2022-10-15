@@ -6,24 +6,15 @@ export default function Login(){
 
     return (
 
-        <div className={styles[`form-login`]}>
-            
-            <h1>Login your Account</h1>
-       
-            
-                {/* placeholder="Jhon Doe" no se si agregarlo*/ }
-
-                <label>Account: </label>
-                <input type="name"  id="account"/> 
-              
-                
-                <label>Password: </label>
-                <input type="password" id="password"/>
-                
-                <button className="form-button-2" onClick={() => navigate('/user')}>Sign in</button>
-           
-    
-        
+        <div className={styles.page}> 
+            <div className={styles.cover}>
+                <div className={styles.title}><h1>Library App</h1></div>
+                <div className={styles.box}>
+                    <input type="text" placeholder="USERNAME" />
+                    <input type="password" placeholder="PASSWORD" />
+                </div>
+                <div className={styles[`login-btn`]} onClick={() => navigate('/user')}>Login</div>
+            </div>
         </div>
     )
 }
