@@ -1,38 +1,90 @@
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 import styles from "./styles/AddBook.module.css";
 
-    
-export default function AddBook(){
+const BooksForm = () =>{    
+
     const navigate = useNavigate();
+
+    const [book, setBook] = useState({
+        title: "",
+        author: "",
+        publicationDate: "",
+        bookImage: "",
+        description: "",
+        isbn: ""
+    });
+
+    const handleChange = (event) => {
+        setBook({
+            ...book, 
+            [event.target.name]: event.target.value,
+        });
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    }
+
 
     return (
     
+    <div className={styles.page}> 
+      {/* <div className={styles.side}>
+       
+        aca iria la barra add book, user, lista
+      </div> */}
+      <div className={styles.cover}>
+        <div className={styles.title}><h1>Add new Book</h1></div>
+        <form onSubmit={handleSubmit}>
+            <input 
+                name="title" 
+                placeholder="Title" 
+                type="text" 
+                onChange={handleChange} 
+            />
 
-    <div className={styles[`form-book`]}>
-        <form >
-           
-            <label> Title: </label>
-            <input name="title" type="text"/>
+            <input 
+                name="author" 
+                placeholder="Author" 
+                type="text" 
+                onChange={handleChange}
+            />  
 
-            <label> Author: </label>
-            <input name="author" type="text"/>
-    
-            <label> Year of publication: </label>
-            <input name="publicationDate" type="text"/>
+            <input 
+                name="publicationDate" 
+                placeholder="Year of publication" 
+                type="text" 
+                onChange={handleChange}
+            /> 
 
-            <label> Book Image: </label>
-            <input name="bookImage" type="text"/>
+            <input name="bookImage" 
+                placeholder="Book Image" 
+                type="text" 
+                onChange={handleChange} 
+            />
 
-            <label> Description: </label>
-            <textarea name="description" type="text"/>
+            <textarea 
+                name="description" 
+                placeholder="Description" 
+                type="text" 
+                onChange={handleChange}
+            />
 
-            <label> ISBN: </label>
-            <input name="isbn" type="text"/>
-
-            <button onClick={() => navigate('/user')}>Add Book</button>
-
-        </form>
+            <input 
+                name="isbn" 
+                placeholder="ISBN" 
+                type="text" 
+                onChange={handleChange} 
+            />
+            </form>
+            {/* <div className={styles[`addbook-btn`]} onClick={() => navigate('/user')}>Add</div> */}
+            <button type="submit" onClick={() => navigate('/user')}>Add</button>
+        </div>
     </div>
 
     )
 }
+
+
+export default BooksForm;
