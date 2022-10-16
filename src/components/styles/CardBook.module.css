@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  border: 0.1rem solid black;
+  margin: 0.2rem;
+  height: 22rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7c19b;
+}
+.front {
+  height: auto;
+  width: 12rem;
+  margin-top: 0.5rem;
+}
+.text {
+  padding: 0.5rem;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
