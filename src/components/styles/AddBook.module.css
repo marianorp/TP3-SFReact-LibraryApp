@@ -48,6 +48,13 @@ textarea {
   
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    width: 100%;
+}
 
 input {
     border: none;
@@ -56,28 +63,12 @@ input {
     width: 80%;
     border-radius: 2em;
     text-align: center;
-    padding: 2em;
+    
 }
 
 textarea, input:focus {
     outline-color: #F59552;
 }
-
-/* .addbook-btn {
-    width: 40%;
-    height: 3em;
-    background-color: #F7C19B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-}
-
-.addbook-btn:hover {
-    transform:  scale(1.25);
-} */
 
 button {
     width: 40%;
@@ -104,4 +95,6 @@ button:hover {
 .hide {
     display: none;
 }
+
+
 

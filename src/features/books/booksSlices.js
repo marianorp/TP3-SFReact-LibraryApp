@@ -221,19 +221,6 @@ const initialState = [
     categories: ["PowerBuilder"],
   },
   {
-    id: 19,
-    title: "Jaguar Development with PowerBuilder 7",
-    isbn: 1884777864,
-    pageCount: 550,
-    year: 1999,
-    thumbnailUrl:
-      "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/barlotta2.jpg",
-    description:
-      "Jaguar Development with PowerBuilder 7 is the definitive guide to distributed application development with PowerBuilder. It is the only book dedicated to preparing PowerBuilder developers for Jaguar applications and has been approved by Sybase engineers and product specialists who build the tools described in the book.",
-    authors: ["Michael Barlotta"],
-    categories: ["PowerBuilder", "Client-Server"],
-  },
-  {
     id: 20,
     title: "Taming Jaguar",
     isbn: 1884777686,
