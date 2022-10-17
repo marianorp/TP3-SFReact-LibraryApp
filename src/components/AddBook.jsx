@@ -36,7 +36,7 @@ const BooksForm = () =>{
       </div> */}
       <div className={styles.cover}>
         <div className={styles.title}><h1>Add new Book</h1></div>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}> */}
             <input 
                 name="title" 
                 placeholder="Title" 
@@ -77,7 +77,7 @@ const BooksForm = () =>{
                 type="text" 
                 onChange={handleChange} 
             />
-            </form>
+            {/* </form> */}
             {/* <div className={styles[`addbook-btn`]} onClick={() => navigate('/user')}>Add</div> */}
             <button type="submit" onClick={() => navigate('/user')}>Add</button>
         </div>

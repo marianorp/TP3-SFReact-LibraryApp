@@ -8,10 +8,10 @@ export default function Register(){
         <div className={styles.page}> 
         <div className={styles.cover}>
             <div className={styles.title}><h1>Register your Account</h1></div>
-            <input type="text" placeholder="ACCOUNT" />
-            <input type="text" placeholder="NAME" />
-            <input type="text" placeholder="EMAIL" />
-            <input type="password" placeholder="PASSWORD" />
+            <input type="text" placeholder="Account" />
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
             <div className={styles[`signup-btn`]} onClick={() => navigate('/user')}>Sign up</div>
         </div>
     </div>
