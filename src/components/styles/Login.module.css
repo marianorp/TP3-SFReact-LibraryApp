@@ -1,68 +1,61 @@
-.title {
-    width: 80%;
-    height: 3.5em;
-    background-color: #F59552;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2em;
-}
-
 .page {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: calc(100vh); /* menos lo que tenga el navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cover {
-    background-color: #754727;
-    width: 30em;
-    height: 25em;
-    position: relative;
-    border-radius: 2em;
-    box-shadow: 0 0.200em 1.600em #F7C19B;  
+  background-color: #754727;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 2em;
+  box-shadow: 0 0.2em 1.6em #f7c19b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 50px 10px;
+}
+
+.title {
+  width: 80%;
+  line-height: 1.5em;
+  background-color: #f59552;
+  border-radius: 2em;
+  font-size: 1.5rem;
+}
+
+.form_login {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;  
+    row-gap: 10px;
+    width: 80%;
 }
 
-input {
-    border: none;
-    background-color: azure;
-    height: 4em;
-    border-radius: 2em;
-    text-align: center;
-    padding: 2em;
+.form_login input {
+  border: none;
+  background-color: azure;
+  height: 4em;
+  border-radius: 2em;
+  text-align: center;
+  width: 100%;
 }
 
-input:focus {
-    outline-color: #F59552;
+.form_login input:focus {
+  outline-color: #f59552;
 }
 
-.login-btn {
-    width: 40%;
-    height: 3em;
-    background-color: #F7C19B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
+.login_btn {
+  background-color: #f7c19b;
+  transition: 0.5s;
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 10px 60px;
+  border: none;
 }
 
-.login-btn:hover {
-    transform:  scale(1.25);
-}
-
-.text {
-    position: relative;
-    bottom: -2em;
-}
-
-.hide {
-    display: none;
+.login_btn:hover {
+  transform: scale(1.1);
 }
