@@ -1,19 +1,28 @@
 import { useNavigate } from "react-router-dom";
-import styles from "./styles/Register.module.css"
+import styles from "./styles/Register.module.css";
 
-export default function Register(){
-    const navigate = useNavigate();
+const Register = () => {
+  const navigate = useNavigate();
 
-    return (
-        <div className={styles.page}> 
-        <div className={styles.cover}>
-            <div className={styles.title}><h1>Register your Account</h1></div>
-            <input type="text" placeholder="Account" />
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <div className={styles[`signup-btn`]} onClick={() => navigate('/user')}>Sign up</div>
-        </div>
+  return (
+    <div className={styles.page}>
+      <div className={styles.cover}>
+          <h1 className={styles.title}>Register your Account</h1>
+        <form className={styles.form_register}>
+          <input type="text" name="account" placeholder="Account" />
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="password" name="password" placeholder="Password" />
+          <button
+            className={styles.signup_btn}
+            onClick={() => navigate("/user")}
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
     </div>
-    )
-}
+  );
+};
+
+export default Register;

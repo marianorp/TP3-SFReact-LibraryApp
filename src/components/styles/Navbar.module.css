@@ -1,11 +1,39 @@
-.nav-bar {
-    background-color: aquamarine;
+.navbar {
+    height: 60px;
+    display: flex;
     justify-content: space-between;
-   
+    align-items: center;
+    background-color: aqua;
+    padding: 10px;
+}
+
+.nav-items {
+    background-color: #754727;
+    width: auto;
+    transition: 0.5s;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
 
 }
 
-
-.nav-links {
-    justify-content: flex-end;
+.nav-logo {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 15px;
+    cursor: pointer;
 }
+
+.nav-items:hover {
+    transform:  scale(1.1);    
+}
+
+h2 {
+    font-size: 15px;
+    cursor: pointer;
+    margin: 15px;
+    position: relative;
+}
+
