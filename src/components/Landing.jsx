@@ -13,7 +13,7 @@ const Landing=()=> {
             provident mollitia nisi amet, excepturi quo atque quia error
             consequatur culpa
           </p>
-          <Link className={styles.buttons} to="books">
+          <Link className={styles.buttons} to="home">
             See library
           </Link>
           <Link className={styles.buttons} to="login">
