@@ -56,12 +56,13 @@
 }
 
 .form_addbook button {
-    background-color: #F7C19B;
-    border-color: #F7C19B;
+    background-color: #f7c19b;
+    width: 180px;
     transition: 0.5s;
     border-radius: 2em;
     cursor: pointer;
     padding: 10px 60px;
+    border-style: none;
 }
 
 .form_addbook button:hover {
