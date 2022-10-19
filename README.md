@@ -2,11 +2,6 @@
 
 
 
- ## Deploy
-
-[Library App](#)
-
-
 ## Team 
 
 
@@ -14,6 +9,13 @@
 - [Cecilia Kuckiewicz](https://github.com/kucki)
 - [Gabriel Maguna](https://github.com/Gabrielmaguna00)
 - [Mariano Perez](https://github.com/marianorp)
+
+
+
+ ## Deploy
+
+[Library App](#)
+
 
 
 # (FOTO DE LA LANDING PRINCIPAL)
