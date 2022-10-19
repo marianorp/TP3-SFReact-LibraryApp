@@ -7,8 +7,8 @@ body {
 }
 .card {
   border: 0.1rem solid black;
-  margin: 0.2rem;
-  height: 22rem;
+  margin: 0.5rem;
+  height: 27rem;
   width: 20rem;
   border-radius: 0.5rem;
   display: flex;
@@ -17,13 +17,13 @@ body {
   background-color: #f7c19b;
 }
 .front {
-  height: auto;
-  width: 12rem;
+  height: 14rem;
+  width: auto;
   margin-top: 0.5rem;
 }
 .text {
   padding: 0.5rem;
-  height: max-content;
+  height: 8rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,3 +31,29 @@ body {
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
 }
+.text > p {
+  font-size: small;
+}
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem 0.75rem 0 0;
+}
+/* .update {
+  width: 40%;
+  height: 3em;
+  background-color: #f7c19b;
+  border-color: #f7c19b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+} */

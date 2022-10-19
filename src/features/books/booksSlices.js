@@ -387,9 +387,18 @@ export const booksSlice = createSlice({
   name: "books",
   initialState,
   reducers: {
-    addBook: (state, action) => {},
+    addBook: (state, action) => {
+      state.push(action.payload);
+    },
     editBook: (state, action) => {},
-    deleteBook: (state, action) => {},
+    deleteBook: (state, action) => {
+      //debo pasar solo el id por payload
+      console.log("entre!:", action.payload);
+      const books = state.find((book) => book.id === Number(action.payload));
+      console.log("books:",books);
+      state.splice(state.indexOf(books),1);
+      console.log(state);
+    },
   },
 });
 
