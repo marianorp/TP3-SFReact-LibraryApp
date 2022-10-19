@@ -23,7 +23,7 @@ const Home = () => {
   const handleFilter = (e) => {
     setSearchParams({ search: e.target.value });
   };
-  console.log(books.length);
+  console.log(books);
   return (
     <div className={styles.container_home}>
       <Navbar />

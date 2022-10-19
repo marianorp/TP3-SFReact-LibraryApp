@@ -242,14 +242,23 @@ export const booksSlice = createSlice({
     addBook: (state, action) => {
       state.push(action.payload);
     },
-    editBook: (state, action) => {},
+    editBook: (state, action) => {
+      const { id, title, authors, year, thumbnailUrl, description, isbn } =
+        action.payload;
+      const foundBook = state.find((book) => book.id === id);
+      if (foundBook) {
+        foundBook.title = title;
+        foundBook.description = description;
+        foundBook.isbn = isbn;
+        foundBook.year = year;
+        foundBook.thumbnailUrl = thumbnailUrl;
+        foundBook.authors = authors.split(",");
+      }
+    },
     deleteBook: (state, action) => {
       //debo pasar solo el id por payload
-      console.log("entre!:", action.payload);
       const books = state.find((book) => book.id === Number(action.payload));
-      console.log("books:",books);
-      state.splice(state.indexOf(books),1);
-      console.log(state);
+      state.splice(state.indexOf(books), 1);
     },
   },
 });
