@@ -44,7 +44,8 @@
 - We are working with the best coding standards so we need everything to be written with the best so we need everything to be written with the implementations of ECMA6 and later of ECMA6 and later (functions, destructuring, among others).
 - Design the mockup of the UI for Login & Register. Add these options to the options to the navbar or menu, depending on the style you choose.
 - As an innovation, all teams will implement the SCRUM methodology.
-- 
+
+
 
  ### Optionals
  
