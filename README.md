@@ -6,7 +6,7 @@
 
 
 - [Adán Rodríguez](https://github.com/adan-rodriguez)
-- [Cecilia Kuckiewicz](https://github.com/kucki)
+- [Cecilia Kuckiewicz](https://github.com/kucki90)
 - [Gabriel Maguna](https://github.com/Gabrielmaguna00)
 - [Mariano Perez](https://github.com/marianorp)
 
@@ -14,7 +14,7 @@
 
  ## Deploy
 
-[Library App](#)
+[Library App](https://libraryapp-nine.vercel.app/)
 
 
 
@@ -109,4 +109,5 @@ You may also see any lint errors in the console.
 - react-scripts 5.0.1
 - sweetalert2 11.4.37
 - web-vitals 2.1.4
+- react-icons 4.6.0
 
