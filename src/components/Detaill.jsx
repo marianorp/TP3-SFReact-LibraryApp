@@ -12,7 +12,7 @@ const Detaill = () => {
   const booksLibrary = useSelector((state) => state.books);
   const [book, setBook] = useState();
   useEffect(() => {
-    setBook(booksLibrary.find((e) => e.id === Number(params.id)));
+    setBook(booksLibrary.find((e) => e.id === params.id));
   }, [params.id]);
   const handleDelete = (e) => {
     e.preventDefault();
@@ -28,7 +28,7 @@ const Detaill = () => {
   };
   const handleUpdate = (e) => {
     e.preventDefault();
-    navigate(`/addbook/${params.id}`)
+    navigate(`/addbook/${params.id}`);
   };
   return (
     <div className={styles.box}>

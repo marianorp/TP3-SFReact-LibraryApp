@@ -10,7 +10,6 @@ const Home = () => {
   const books = useSelector((state) => state.books);
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get("search") ?? "";
-  //
   const [currentPage, setCurrentPage] = useState(1);
   const [bookPerPage, setBookPerPage] = useState(9);
   const lastPositionBook = currentPage * bookPerPage;
@@ -23,7 +22,6 @@ const Home = () => {
   const handleFilter = (e) => {
     setSearchParams({ search: e.target.value });
   };
-  console.log(books);
   return (
     <div className={styles.container_home}>
       <Navbar />

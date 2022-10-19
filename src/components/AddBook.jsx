@@ -4,13 +4,14 @@ import styles from "./styles/AddBook.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addBook, editBook } from "../features/books/booksSlices";
 import Swal from "sweetalert2";
-import { v4 } from "uuid";
+import regex from "../utils/regex";
 
 const AddBook = () => {
   const navigate = useNavigate();
   const params = useParams();
   const dispatch = useDispatch();
   const booksLibrary = useSelector((state) => state.books);
+  const [err, setErr] = useState({});
   const [book, setBook] = useState({
     id: "",
     title: "",
@@ -20,10 +21,15 @@ const AddBook = () => {
     description: "",
     isbn: "",
   });
+
+  useEffect(() => {
+    setErr(validate(book));
+  }, [book]);
+
   useEffect(() => {
     if (params.id) {
       let { id, title, authors, year, thumbnailUrl, description, isbn } =
-        booksLibrary.find((e) => e.id === Number(params.id));
+        booksLibrary.find((e) => e.id === params.id);
       const author = authors.toString();
       setBook({
         id,
@@ -36,6 +42,21 @@ const AddBook = () => {
       });
     }
   }, [params.id]);
+
+  const validate = (book) => {
+    let errors = {};
+    if (!regex.empty.test(book.title)) {
+      errors.title = "put a title!";
+      return errors;
+    } else if (!regex.empty.test(book.authors)) {
+      errors.authors = "put a author!";
+      return errors;
+    } else if (!regex.img.test(book.thumbnailUrl)) {
+      errors.thumbnailUrl = "enter a valid url!";
+      return errors;
+    }
+    return false;
+  };
 
   const handleChange = (event) => {
     setBook({
@@ -58,8 +79,6 @@ const AddBook = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!params.id) {
-      let id = v4();
-      setBook({ ...book, id: id });
       dispatch(addBook(book));
       submitBook(false);
     } else {
@@ -67,7 +86,6 @@ const AddBook = () => {
       submitBook(params.id);
     }
   };
-  console.log(book);
   return (
     <div className={styles.page}>
       <div className={styles.cover}>
@@ -81,6 +99,7 @@ const AddBook = () => {
             value={book.title}
             required
           />
+          {err.title && <p>{err.title}</p>}
           <input
             name="authors"
             placeholder="Author"
@@ -89,6 +108,7 @@ const AddBook = () => {
             value={book.authors}
             required
           />
+          {err.authors && <p>{err.authors}</p>}
           <input
             name="year"
             placeholder="Year of publication"
@@ -105,6 +125,7 @@ const AddBook = () => {
             value={book.thumbnailUrl}
             required
           />
+          {err.thumbnailUrl && <p>{err.thumbnailUrl}</p>}
           <textarea
             name="description"
             placeholder="Description"
@@ -122,7 +143,11 @@ const AddBook = () => {
             value={book.isbn}
             required
           />
-          <input type="submit" value="Add" onClick={(e) => handleSubmit(e)} />
+          {err ? (
+            <p>Complete the form</p>
+          ) : (
+            <input type="submit" value="Add" onClick={(e) => handleSubmit(e)} />
+          )}
         </form>
       </div>
     </div>

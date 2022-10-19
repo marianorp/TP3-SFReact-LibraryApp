@@ -6,7 +6,7 @@ const devs = [
     git: "https://github.com/adan-rodriguez",
   },
   {
-    img: 'htt ps://i.postimg.cc/gjgnSW2K/Cecilia.jpg',
+    img: 'https://i.postimg.cc/gjgnSW2K/Cecilia.jpg',
     name: 'Cecilia Kuckiewicz',
     job: "Tuki's Collaborator",
     git: "https://github.com/kucki",
