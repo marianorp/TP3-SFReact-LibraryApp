@@ -12,7 +12,7 @@ const Detaill = () => {
   const booksLibrary = useSelector((state) => state.books);
   const [book, setBook] = useState();
   useEffect(() => {
-    setBook(booksLibrary.find((e) => e.id === Number(params.id)));
+    setBook(booksLibrary.find((e) => e.id === params.id));
   }, [params.id]);
   const handleDelete = (e) => {
     e.preventDefault();
@@ -26,7 +26,10 @@ const Detaill = () => {
       navigate("/home");
     });
   };
-  const handleUpdate = () => {};
+  const handleUpdate = (e) => {
+    e.preventDefault();
+    navigate(`/addbook/${params.id}`);
+  };
   return (
     <div className={styles.box}>
       {book ? (
@@ -40,7 +43,7 @@ const Detaill = () => {
               <h3 className={styles.caption}>Information</h3>
               <p>
                 <strong>authors:</strong>{" "}
-                {book.authors && book.authors.map((a) => a)}
+                {book.authors && book.authors.toString()}
               </p>
               <p>
                 <strong>ISBN:</strong>
@@ -52,12 +55,12 @@ const Detaill = () => {
               </p>
             </div>
             <div className={styles.button}>
-              <button>Update</button>
+              <button onClick={(e) => handleUpdate(e)}>Update</button>
               <button onClick={(e) => handleDelete(e)}>Delete</button>
             </div>
           </div>
         </div>
-      ) : (        
+      ) : (
         <h1>loading...</h1>
       )}
     </div>

@@ -4,13 +4,12 @@ import { useSearchParams, Link } from "react-router-dom";
 import CardBook from "./CardBook";
 import Paginado from "./Paginado";
 import { useState } from "react";
-import SearchBar from "./SearchBar";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const books = useSelector((state) => state.books);
   const [searchParams, setSearchParams] = useSearchParams();
   const search = searchParams.get("search") ?? "";
-  //
   const [currentPage, setCurrentPage] = useState(1);
   const [bookPerPage, setBookPerPage] = useState(9);
   const lastPositionBook = currentPage * bookPerPage;
@@ -23,10 +22,9 @@ const Home = () => {
   const handleFilter = (e) => {
     setSearchParams({ search: e.target.value });
   };
-  console.log(books.length);
   return (
     <div className={styles.container_home}>
-      <SearchBar/>
+      <Navbar />
       <div className={styles.container_cards}>
         {currentBook
           .filter((book) => {

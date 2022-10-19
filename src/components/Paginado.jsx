@@ -16,7 +16,6 @@ export default function Paginado({
   const handleChange = (event, value) => {
     paginado(value);
   };
-  console.log(pageNumber);
   return (
     <div className={styles.paginado}>
       <Pagination

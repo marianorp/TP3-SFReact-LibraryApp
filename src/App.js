@@ -11,7 +11,7 @@ import Landing from "./components/Landing";
 import Home from "./components/Home";
 import Detaill from "./components/Detaill";
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <BrowserRouter>
@@ -25,6 +25,7 @@ const App = () => {
           <Route path="/user" element={<User />} />
           <Route path="/home/:id" element={<Detaill />} />
           <Route path="/addbook" element={<AddBook />} />
+          <Route path="/addbook/:id" element={<AddBook />} />
         </Routes>
       </BrowserRouter>
     </div>
