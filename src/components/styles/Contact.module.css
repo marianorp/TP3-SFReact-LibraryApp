@@ -1,83 +1,88 @@
 body {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f2f2f2;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
 }
-
-.container {
-    max-width: 950px;
-    background-color: red;
-    width: 100%;
-    border-radius: 30px;
-    margin-top: 30%;
+.container_contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
 }
-
-
+.container_cards {
+  display: flex;
+  align-items: center;
+}
 
 .main_card .cards {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.main_card .cards .card {
-    background-color: coral;
-    padding: 30px;
-    border-radius: 24px;
-    margin: 10px;
+.cards {
+  background-color: coral;
+  padding: 30px;
+  border-radius: 24px;
+  margin: 10px;
 }
 
 .cards .card .content .img {
-    height: 130px;
-    width: 130px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-    background: wheat;
-    padding: 3px;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background: wheat;
+  padding: 3px;
 }
 
-.cards .card .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.cards .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-
-
-
-.card .content .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-
-}
- 
-.card .content .details .name {
-    font-size: 20px;
-    font-weight: 500;
+.content .img img {
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-.card .content .details .job {
-    font-size: 20px;
-    color: aquamarine;
+.content .details .name {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.card .content .media_icons {
-    display: flex;
-    margin-top: 10px;
+.content .details .job {
+  font-size: 20px;
+  color: aquamarine;
 }
 
-.card .content .media_icons img {
-    height: 35px;
-    width: 35px;
-    background: #fff;
-    margin: 0 4px;
-    border-radius: 50%;
-    border: 2px solid transparent;
+.content .media_icons {
+  display: flex;
+  margin-top: 10px;
+}
 
+.cards .content .media_icons img {
+  height: 3.5rem;
+  width: auto;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+@media screen and (min-width: 700px) {
+  .main_card .cards {
+    flex-direction: row;
+  }
 }

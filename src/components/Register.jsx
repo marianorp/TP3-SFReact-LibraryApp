@@ -15,7 +15,7 @@ const Register = () => {
           <input type="password" name="password" placeholder="Password" />
           <button
             className={styles.signup_btn}
-            onClick={() => navigate("/user")}
+            onClick={() => navigate("/home")}
           >
             Sign up
           </button>
