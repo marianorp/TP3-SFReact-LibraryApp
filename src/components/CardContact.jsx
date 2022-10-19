@@ -36,9 +36,6 @@ import styles from "./styles/Contact.module.css"
 const CardContact = (props) => {
 
     return (
-
-        
-
             <div className={styles.cards}>
                 <div className={styles.content}>
                     <div className={styles.img}>
