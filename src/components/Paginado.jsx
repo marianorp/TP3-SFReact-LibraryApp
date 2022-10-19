@@ -1,5 +1,6 @@
 import React from "react";
 import Pagination from "@mui/material/Pagination";
+import styles from "./styles/Paginado.module.css";
 
 export default function Paginado({
   bookPerPage,
@@ -17,7 +18,7 @@ export default function Paginado({
   };
   console.log(pageNumber);
   return (
-    <div className="paginado">
+    <div className={styles.paginado}>
       <Pagination
         count={pageNumber.length}
         page={currentPage}

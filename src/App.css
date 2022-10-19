@@ -4,17 +4,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 .App {
-  text-align: center;
-  z-index: -999;
-  background: #755c4a;
-  height: 100%;
-  text-align: center;
+  /* background: #755c4a; */
+  background-image: url("https://images.pexels.com/photos/256453/pexels-photo-256453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }

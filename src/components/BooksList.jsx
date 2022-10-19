@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
 import CardBook from "./CardBook";
 
-
 const BooksList = () => {
 
   const books = useSelector((state) => state.books);
@@ -11,7 +10,6 @@ const BooksList = () => {
 
   return (
     <div>
-      
       {books
         .filter((book) => {
           if (!search) return true;
