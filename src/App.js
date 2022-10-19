@@ -4,11 +4,9 @@ import "./App.css";
 //Pages
 import Contact from './components/Contact';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
 import Register from './components/Register';
 import User from './components/User';
 import AddBook from './components/AddBook';
-import BooksList from './components/BooksList';
 import Landing from './components/Landing';
 import Home from "./components/Home"
 import Detaill from "./components/Detaill"
@@ -28,6 +26,7 @@ function App() {
           <Route exact path='/user' element={<User/>}/>
           <Route exact path='/home/:id' element={<Detaill/>}/>
           <Route exact path='/addbook' element={<AddBook/>}/>
+          <Route exact path='/addbook/:id' element={<AddBook/>}/>
           
         </Routes>
       </BrowserRouter> 
