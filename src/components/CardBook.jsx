@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./styles/CardBook.module.css";
+// import { MdDeleteForever } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
 
 const CardBook = ({
   title = "Unlocking Android",
@@ -9,6 +11,9 @@ const CardBook = ({
   return (
     <div className={styles.container}>
       <div className={styles.card}>
+        {/* <div className={styles.icons}>
+          <MdDeleteForever />
+        </div> */}
         <img
           src={image}
           alt={title}
@@ -19,6 +24,7 @@ const CardBook = ({
           <h2>{title}</h2>
           <p>Author: {author[0]}</p>
         </div>
+        {/* <button className={styles.update}>Update</button> */}
       </div>
     </div>
   );

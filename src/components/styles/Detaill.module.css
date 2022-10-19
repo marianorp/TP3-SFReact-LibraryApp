@@ -51,6 +51,24 @@ img {
   display: flex;
   flex-direction: column;
 }
+.button {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+.button > button {
+  width: 10rem;
+  height: 3em;
+  background-color: #f7c19b;
+  border-color: #f7c19b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 2em;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {
   .box {
     height: 100vh;
@@ -76,12 +94,12 @@ img {
     margin: 1rem 0.75rem 0rem 0;
   }
 }
-@media screen and (min-width: 1000px){
-  .text{
+@media screen and (min-width: 1000px) {
+  .text {
     height: 22rem;
   }
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   .box {
     height: 100%;
     background-image: url(https://images.pexels.com/photos/3646105/pexels-photo-3646105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
