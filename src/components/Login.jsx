@@ -11,7 +11,7 @@ const Login = () => {
         <form className={styles.form_login}>
           <input type="text" name="username" placeholder="Username" />
           <input type="password" name="password" placeholder="Password" />
-        <button className={styles.login_btn} onClick={() => navigate("/user")}>
+        <button className={styles.login_btn} onClick={() => navigate("/home")}>
           Login
         </button>
         </form>
