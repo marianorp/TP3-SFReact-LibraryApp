@@ -4,6 +4,7 @@ import { useSearchParams, Link } from "react-router-dom";
 import CardBook from "./CardBook";
 import Paginado from "./Paginado";
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const Home = () => {
   const books = useSelector((state) => state.books);
@@ -25,6 +26,7 @@ const Home = () => {
   console.log(books.length);
   return (
     <div className={styles.container_home}>
+      <Navbar />
       <div className={styles.container_cards}>
         {currentBook
           .filter((book) => {

@@ -4,11 +4,9 @@ import "./App.css";
 //Pages
 import Contact from './components/Contact';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
 import Register from './components/Register';
 import User from './components/User';
 import AddBook from './components/AddBook';
-import BooksList from './components/BooksList';
 import Landing from './components/Landing';
 import Home from "./components/Home"
 import Detaill from "./components/Detaill"
@@ -18,7 +16,6 @@ function App() {
    <>
    <div className="App">
       <BrowserRouter> 
-        <Navbar/>
         <Routes>
 
           <Route exact path='/' element={<Landing/>}/>  
