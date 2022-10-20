@@ -51,7 +51,7 @@
 }
 .form_addbook textarea,
 input:focus {
-  outline-color: #f59552;
+  outline-color: black;
 }
 .form_addbook button {
   background-color: #f7c19b;

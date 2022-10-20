@@ -46,7 +46,7 @@
 }
 
 .form_register input:focus {
-  outline-color: #f59552;
+  outline-color: black;
 }
 
 .signup_btn {
