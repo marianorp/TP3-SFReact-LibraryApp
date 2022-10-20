@@ -18,7 +18,15 @@
 
 
 
-# (FOTO DE LA LANDING PRINCIPAL y TRELLO)
+![Home](https://i.postimg.cc/dQkMRPNq/home.jpg)
+
+
+
+## We implement scrum methodology using Trello
+
+
+
+![Trello](https://i.postimg.cc/Hn7trt2g/TRELLO.jpg)
 
     
 
