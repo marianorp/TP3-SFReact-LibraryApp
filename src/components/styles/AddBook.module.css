@@ -1,70 +1,83 @@
 .page {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
 }
-
 .cover {
-    background-color: #754727;
-    width: 90%;
-    padding: 50px 10px;
-    border-radius: 2em;
-    box-shadow: 0 0.200em 1.600em #F7C19B;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px; 
-    max-width: 500px;
-    margin: 20px;
+  background-color: #3c3f42;
+  width: 90%;
+  padding: 50px 10px;
+  border-radius: 2em;
+  box-shadow: 0 0.2em 1.6em #bac3ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+  height: 45rem;
 }
-
 .title {
-    width: 80%;
-    background-color: #F59552;
-    border-radius: 2em;
-    line-height: 1.5em;
-    font-size: 1.5rem;
+  width: 80%;
+  background-color: #bac3ce;
+  border-radius: 2em;
+  line-height: 1.5em;
+  font-size: 1.5rem;
+  text-align: center;
 }
-
-
 .form_addbook {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  width: 80%;
+  margin-top: 3rem;
 }
-
 .form_addbook textarea {
-    width: 100%;
-    resize: none;
-    border-radius: 2em;
-    text-align: center;
-    padding: 10px;
+  width: 100%;
+  resize: none;
+  border-radius: 2em;
+  text-align: center;
+  padding: 10px;
 }
-
 .form_addbook input {
-    border: none;
-    width: 100%;
-    background-color: azure;
-    height: 4em;
-    border-radius: 2em;
-    text-align: center;  
+  border: none;
+  width: 100%;
+  background-color: azure;
+  height: 4em;
+  border-radius: 2em;
+  text-align: center;
 }
-
-.form_addbook textarea, input:focus {
-    outline-color: #F59552;
+.form_addbook textarea,
+input:focus {
+  outline-color: #f59552;
 }
-
 .form_addbook button {
-    background-color: #f7c19b;
-    width: 180px;
-    transition: 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-    padding: 10px 60px;
-    border-style: none;
+  background-color: #f7c19b;
+  width: 180px;
+  transition: 0.5s;
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 10px 60px;
+  border-style: none;
 }
-
 .form_addbook button:hover {
-    transform:  scale(1.1);    
+  transform: scale(1.1);
+}
+.page > a {align-self: start;}
+.boton__back {
+  background-color: #BAC3CE;
+  border: none;
+  border-radius: 0.5em;
+  color: black;
+  width: min-content;
+  padding: 0.938em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0.313em;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
 }

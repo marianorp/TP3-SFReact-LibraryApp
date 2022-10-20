@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./styles/AddBook.module.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -88,6 +88,9 @@ const AddBook = () => {
   };
   return (
     <div className={styles.page}>
+      <Link to="/home">
+        <button className={styles.boton__back}>BACK</button>
+      </Link>
       <div className={styles.cover}>
         <h1 className={styles.title}>Add new Book</h1>
         <form className={styles.form_addbook} onSubmit={handleSubmit}>

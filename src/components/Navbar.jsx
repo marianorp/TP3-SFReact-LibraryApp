@@ -1,8 +1,9 @@
 import styles from "./styles/Navbar.module.css";
 import { Link } from "react-router-dom";
-
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
+import {BsFillPersonCheckFill} from "react-icons/bs"
+import {FaBookMedical, FaHome} from "react-icons/fa"
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -14,12 +15,12 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <Link className={styles["nav-logo"]} to="/">
-        Library App!
+      <FaHome/>
       </Link>
       <SearchBar />
-      <button onClick={(e) => handleCreate(e)}>Add Book</button>
+      <button className={styles.addButton} onClick={(e) => handleCreate(e)}><FaBookMedical/></button>
       <div className={styles["nav-items"]}>
-        <Link to="/contact">Contact Us</Link>
+        <Link to="/contact"><BsFillPersonCheckFill/></Link>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import styles from "./styles/Contact.module.css";
 import CardContact from "./CardContact";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [contacts] = useState([
@@ -36,6 +37,9 @@ const Contact = () => {
 
   return (
     <div className={styles.container_contact}>
+          <Link to="/home">
+        <button className={styles.boton__back}>BACK</button>
+      </Link>
       <div className={styles.container_cards}>
         {contacts.map((cardcontact) => {
           return (

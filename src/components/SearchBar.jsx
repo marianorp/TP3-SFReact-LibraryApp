@@ -12,7 +12,7 @@ const SearchBar = () => {
 
     return (
         <div className={styles[`container-search-book`]}>
-        <input
+        <input className={styles.input}
           type="text"
           id="search"
           placeholder="Search"

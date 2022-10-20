@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles/Register.module.css";
 
 const Register = () => {
@@ -6,8 +6,11 @@ const Register = () => {
 
   return (
     <div className={styles.page}>
+      <Link to="/">
+        <button className={styles.boton__back}>BACK</button>
+      </Link>
       <div className={styles.cover}>
-          <h1 className={styles.title}>Register your Account</h1>
+        <h1 className={styles.title}>Register your Account</h1>
         <form className={styles.form_register}>
           <input type="text" name="account" placeholder="Account" />
           <input type="text" name="name" placeholder="Name" />

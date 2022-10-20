@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import styles from "./styles/Detaill.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import Swal from "sweetalert2";
@@ -32,6 +32,9 @@ const Detaill = () => {
   };
   return (
     <div className={styles.box}>
+      <Link to="/home">
+        <button className={styles.boton__back}>BACK</button>
+      </Link>
       {book ? (
         <div className={styles.container}>
           <img src={book.thumbnailUrl} alt="" />
@@ -56,7 +59,12 @@ const Detaill = () => {
             </div>
             <div className={styles.button}>
               <button onClick={(e) => handleUpdate(e)}>Update</button>
-              <button onClick={(e) => handleDelete(e)}>Delete</button>
+              <button
+                className={styles.delete}
+                onClick={(e) => handleDelete(e)}
+              >
+                Delete
+              </button>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@
   padding: 0.5rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .container {
   display: flex;
@@ -20,7 +21,7 @@ img {
   width: 100%;
   background-color: white;
   margin-top: 1rem;
-  max-height: 28rem;
+  min-height: 22rem;
   height: max-content;
   display: flex;
   flex-direction: column;
@@ -56,8 +57,8 @@ img {
 .button > button {
   width: 10rem;
   height: 3em;
-  background-color: #f7c19b;
-  border-color: #f7c19b;
+  background-color: #5e6368;
+  border-color: #5e6368;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +66,27 @@ img {
   border-radius: 2em;
   cursor: pointer;
 }
+.delete {
+  border-color: #5e6368;
+  background-color: #a65c6a;
+}
+.box > a {align-self: start;}
+.boton__back {
+  background-color: #BAC3CE;
+  border: none;
+  border-radius: 0.5em;
+  color: black;
+  width: min-content;
+  padding: 0.938em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0.313em;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
 
 @media screen and (min-width: 700px) {
   .box {
@@ -91,12 +113,12 @@ img {
     margin: 1rem 0.75rem 0rem 0;
   }
 }
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   .text {
     height: 22rem;
   }
-}
-@media screen and (max-width: 375px) {
+} */
+@media screen and (max-width: 425px) {
   .box {
     height: 100%;
     background-image: url(https://images.pexels.com/photos/3646105/pexels-photo-3646105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -107,3 +129,4 @@ img {
     background-position: center;
   }
 }
+
