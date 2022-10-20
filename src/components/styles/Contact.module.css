@@ -1,15 +1,17 @@
 .container_contact {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 }
 .container_cards {
   display: flex;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }
 
 .main_card .cards {
@@ -19,7 +21,7 @@
 }
 
 .cards {
-  background-color: coral;
+  background-color: #2B333E;
   padding: 30px;
   border-radius: 24px;
   margin: 10px;
@@ -52,6 +54,7 @@
 .content .details .name {
   font-size: 20px;
   font-weight: 500;
+  color: aquamarine;
 }
 
 .content .details .job {
@@ -73,8 +76,30 @@
   border: 2px solid transparent;
 }
 
+.container_contact > a {align-self: start;}
+.boton__back {
+  background-color: #BAC3CE;
+  border: none;
+  border-radius: 0.5em;
+  color: black;
+  width: min-content;
+  padding: 0.938em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0.313em;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 700;
+}
+
 @media screen and (min-width: 700px) {
   .main_card .cards {
     flex-direction: row;
+  }
+}
+@media screen and (min-width: 1440px){
+  .container_contact {
+    height: 100vh;
   }
 }

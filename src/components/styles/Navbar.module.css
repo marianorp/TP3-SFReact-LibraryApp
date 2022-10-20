@@ -1,32 +1,40 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: aqua;
-    padding: 10px;
+  display: flex;
+  background-color: #2b333e;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.nav-logo {
+/* .nav-logo {
     font-weight: 700;
     font-size: 25px;
-}
+    width: 6rem;
+} */
 
-.nav-items {
+/* .nav-items {
     background-color: #754727;
     transition: 0.5s;
     border-radius: 2em;
     padding: 5px 20px;
+} */
+.addButton {
+  background-color: inherit;
+  /* transition: 0.5s; */
+  /* border-radius: 2em; */
+  cursor: pointer;
+  /* padding: 0.25rem 1rem; */
+  border: none;
 }
 
-
 .nav-items:hover {
-    transform:  scale(1.1);    
+  transform: scale(1.1);
 }
 
 h2 {
-    font-size: 15px;
-    cursor: pointer;
-    margin: 15px;
-    position: relative;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 15px;
+  position: relative;
 }
-
