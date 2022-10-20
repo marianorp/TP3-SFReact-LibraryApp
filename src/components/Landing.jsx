@@ -8,10 +8,8 @@ const Landing=()=> {
           <h1 className={styles.title}>Library App</h1>
         <div className={styles.card}>
           <p className={styles.text_home}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-            omnis eos qui maiores architecto tempora veritatis sed ipsa veniam,
-            provident mollitia nisi amet, excepturi quo atque quia error
-            consequatur culpa
+            Library App offers a wide range of book categories, such as: games, architecture, art, comics, business, software, 
+            security, science, e-learning, poetry, music, etc. You can add, edit or delete your book collection.
           </p>
           <Link className={styles.buttons} to="home">
             See library
